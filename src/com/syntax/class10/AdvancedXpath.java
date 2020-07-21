@@ -15,7 +15,7 @@ public class AdvancedXpath extends BaseClass {
 		driver.findElement(By.id("btnLogin")).click();
 		driver.findElement(By.linkText("Leave")).click();
 		driver.findElement(By.id("menu_leave_viewLeaveList")).click();
-		// click on the calendar image using advanced xpath
+		// click on the calendar image using advanced xpath	  //xpath of sibling and I am following my sibling/my tagname
 		WebElement calendarBTN = driver.findElement(By.xpath("//input[@id='calFromDate']/following-sibling::img"));
 		calendarBTN.click();
 	}

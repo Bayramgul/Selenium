@@ -18,7 +18,7 @@ public class ScreenShotDemo extends BaseClass {
 		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
 		driver.findElement(By.id("txtPassword")).sendKeys("Hum@nhrm123");
 		driver.findElement(By.id("btnLogin")).click();
-		//Using Selenium we can take screenShots Using ScreenShot interface.
+		//Using Selenium we can take screenShots Using TakesScreenshot interface.
 				//1.we need to downcast  WebDriver obj to Screenshot and create a variable of TakesScreenshot
 				TakesScreenshot ts=(TakesScreenshot)driver;
 				

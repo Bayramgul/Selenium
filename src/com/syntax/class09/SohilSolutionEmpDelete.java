@@ -13,7 +13,7 @@ public class SohilSolutionEmpDelete extends BaseClass {
 
 	public static void main(String[] args) {
 		setUp();
-//login to the hrm page
+		//login to the hrm page
 		WebElement username = driver.findElement(By.id("txtUsername"));
 		CommonMethods.sendText(username, ConfigsReader.getProperty("username"));
 		WebElement password = driver.findElement(By.id("txtPassword"));

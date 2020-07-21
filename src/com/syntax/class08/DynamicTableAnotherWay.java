@@ -27,7 +27,9 @@ public class DynamicTableAnotherWay extends BaseClass {
 
 			if(rowText.contains(expectValue)) {//validating expected Value
 				//loop through each row by providing the index in the xpath and click on it.
-				driver.findElement(By.xpath("//table[@id='ctl00_MainContent_orderGrid']/tbody/tr["+i+"]/td[1]")).click();
+				driver.findElement(By.xpath("//table[@id='ctl00_MainContent_orderGrid']/tbody/tr["+i+ "]/td[1]")).click();
+											String name="Gulen";
+													System.out.println("hello"+ name+" welcome");
 													//row changes so we put i and want excatly constant 1 to click on checkbox
 				break;//once we click don't loop and search just break and stop
 			}	

@@ -27,10 +27,10 @@ public class HW extends BaseClass {
 		// find departing month address
 		sleep(2);
 		boolean found = false;
-		while (!found) {
+		while (!found) {//will work only when condition is true, 
 			String depMonthText = driver.findElement(By.xpath("//div[contains(@class, 'ui-corner-left')]/div"))
 					.getText();
-			if (depMonthText.equals("July 2020")) {
+			if (depMonthText.equals("July 2020")) {//compare the Month 
 				List<WebElement> days = driver.findElements(
 						By.xpath("//div[contains(@class, 'ui-corner-left')]/following-sibling::table/tbody/tr/td"));
 				for (WebElement day : days) {

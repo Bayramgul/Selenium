@@ -7,7 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 import com.syntax.utils.BaseClass;
 
 public class DragAndDrop extends BaseClass {
-
+//Go to “http://www.uitestpractice.com/”
 	public static void main(String[] args) {
 		setUp();
 		driver.switchTo().frame(0);

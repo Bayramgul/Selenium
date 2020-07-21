@@ -295,4 +295,21 @@ public static void sleep (long millis) {
 			e.printStackTrace();
 		}
 	}
+	/**
+	 * This method will select a date from the calendar
+	 * @param element
+	 * @param day
+	 */
+	public static void selectCalendarDate(List<WebElement> element,String day) {
+		for(WebElement pickDate:element ) {
+			if(pickDate.isEnabled()) {
+				String dayText=pickDate.getText();
+				if(dayText.equals(day)) {
+					pickDate.click();
+					break;
+				}
+			}
+			
+		}
+	}
 }
