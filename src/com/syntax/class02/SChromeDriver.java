@@ -1,9 +1,9 @@
 package com.syntax.class02;
 
 public class SChromeDriver implements SWebDriver {
-	SChromeDriver(){
-		System.err.println("Opening Chrome Browser...");
-	}
+//	SChromeDriver(){
+//		System.err.println("Opening Chrome Browser...");
+//	}
 
 	@Override
 	public void get(String url) {
