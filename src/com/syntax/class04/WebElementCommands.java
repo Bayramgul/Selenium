@@ -10,16 +10,19 @@ public class WebElementCommands {
 	public static String UserName="Tester";
 	public static String  password="test";
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","drivers/chromedriver");
+		System.setProperty("webdriver.chrome.driver","drivers/chromedriver 2");
 		WebDriver driver=new ChromeDriver();
 		driver.get(url);
-		WebElement userNam=driver.findElement(By.xpath("//input[contains(@id,'username')]"));//userName textBox
-		userNam.clear();
+//		WebElement userNam=driver.findElement(By.xpath("//input[contains(@id,'username')]"));//userName textBox
+		WebElement userNam=driver.findElement(By.xpath("//input [@type='text']"));
+		userNam.clear(); 
+		
 		Thread.sleep(3000);
 		userNam.sendKeys(UserName);
 		
-	WebElement pass=driver.findElement(By.cssSelector("input[name*='$password']"));//password textBox
-	pass.clear();
+//	WebElement pass=driver.findElement(By.cssSelector("input[name*='$password']"));//password textBox
+		WebElement pass=driver.findElement(By.cssSelector("input[type='password']"));
+	pass.clear(); 
 	pass.sendKeys(password);
 	
 	WebElement loginBtn=driver.findElement(By.cssSelector("input[value='Login']"));//login button
