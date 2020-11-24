@@ -31,7 +31,7 @@ public class Amazon_Task {
 				count++;
 			}
 		}
-		System.out.println("Total number of link is: "+count);
+		System.out.println("Total number of link with text is: "+count);
 		driver.quit();
 	}
 

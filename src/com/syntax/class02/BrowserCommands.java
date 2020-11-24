@@ -11,13 +11,15 @@ public class BrowserCommands {
 		driver.get("https://www.facebook.com");//will not store the history
 		driver.manage().window().maximize();//fullscreen();
 		Thread.sleep(3000);
-		driver.navigate().refresh();
+		driver.navigate().refresh(); 
 		driver.navigate().to("https://www.amazon.com/");//will store the history, will have froward and backward button
 		
-		driver.navigate().back();
+		driver.navigate().back(); // need to go to facebook
+		Thread.sleep(3000);
+
+		driver.navigate().forward(); // need to go to the amazon 
 		Thread.sleep(3000);
 		
-		driver.navigate().forward();
 		driver.close();
 		driver.quit();
 	}

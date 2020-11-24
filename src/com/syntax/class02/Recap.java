@@ -16,6 +16,7 @@ public class Recap {
 		String title=driver.getTitle();//returns title in string
 		System.out.println("Title of the browser is "+title);
 		driver.close();
+		
 	}
 
 }
