@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AllLinksOfEbay_TAGNAME {
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver","drivers/chromedriver");
+		System.setProperty("webdriver.chrome.driver","drivers/chromedriver 2");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.ebay.com");
 		List<WebElement> allLinks=driver.findElements(By.tagName("a"));// all links starts with tagName a,findElements using tagName a

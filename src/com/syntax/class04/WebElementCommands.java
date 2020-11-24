@@ -16,8 +16,15 @@ public class WebElementCommands { // TestCAse 1 & 2
 //		WebElement userNam=driver.findElement(By.xpath("//input[contains(@id,'username')]"));//userName textBox
 		WebElement userNam=driver.findElement(By.xpath("//input [@type='text']"));
 		userNam.clear(); 
+<<<<<<< HEAD
 		Thread.sleep(3000);
 		userNam.sendKeys(UserName);
+=======
+		
+		Thread.sleep(3000);
+		userNam.sendKeys(UserName);
+		
+>>>>>>> d1078d94fd35666aebe40bd3e8f1ba4c335864a0
 //	WebElement pass=driver.findElement(By.cssSelector("input[name*='$password']"));//password textBox
 		WebElement pass=driver.findElement(By.cssSelector("input[type='password']"));
 	pass.clear(); 

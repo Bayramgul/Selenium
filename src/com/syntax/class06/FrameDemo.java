@@ -37,6 +37,7 @@ public class FrameDemo extends BaseClass{
 		name.sendKeys("Asel");
 		driver.switchTo().defaultContent();//go back to the webpage/main window
 		Thread.sleep(3000);
+		tearDown();
 	}
 
 }
